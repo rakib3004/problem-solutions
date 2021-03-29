@@ -56,6 +56,7 @@ int main()
 
                             if((b>=0 &&b<8) && (a>=0 && a<8) && g[a][b]==0 )
                             {
+
                                 g[a][b]=g[i][j]+1;
                                 q.push(make_pair(a,b));
                             }
@@ -68,6 +69,15 @@ int main()
 
 
         }
+
+
+        for(int i=0;i<8;i++){
+                cout<<endl;
+
+            for(int j=0;j<8;j++)
+                cout<<g[i][j]<<" ";
+        }
+cout<<endl<<endl;
         cout<<g[x2][y2]<<"\n";
 
     }
