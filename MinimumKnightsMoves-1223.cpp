@@ -44,9 +44,9 @@ int main()
             int i=q.front().first;
             int j=q.front().second;
 
-            for(int a=i-1; a<i+2; a++)
+            for(int a=i-2; a<=i+3; a++)
             {
-                if(a==i)
+                if(a==i||a==i-1||a==i+1)
                     continue;
 
                     for(int b=j-1; b<j+2; b++)
