@@ -7,19 +7,23 @@ string a;
 set<char> s;
 
 
-int index=0;
+
 
 int findErrorChar(string s, ll i, ll size)
 {
 
     int t=0;
-
+int index=0;
 
     ll j = 1;
     for (; i < (size / 2) + 1; i++)
     {
-        if (s[i - 1] == s[size - j++])
+        if (s[i - 1] == s[size - j++]){
             continue;
+
+
+        }
+
 
         //4  8
         else if (t==0&&(s[i - 1] != s[size - j]))
@@ -116,14 +120,11 @@ int main()
                 cin >> l; // left value
                 cin >> r; // right value
 
-                if (palin(a, l, r) == -1)
-                {
+
                     cout<<findErrorChar(a, l, r)<<endl;
-                }
-                else
-                {
-                    cout << 0 << endl;
-                }
+
+                  //  cout << 0 << endl;
+
             }
             else
             {
