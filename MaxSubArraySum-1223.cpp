@@ -26,7 +26,7 @@ int main(){
             s=max(s,a[i]);
         }
 
-        printf("Case %lld: %lld %lld\n",++cas,s,0);
+        printf("Case %lld: %lld 0\n",++cas,s);
         continue;
     }
     ll x=0,y=n;
