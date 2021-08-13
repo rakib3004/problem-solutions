@@ -11,7 +11,8 @@ int i;
 
 for(i=firstNumber;i<=lastNumber;i++){
 
-    printf("Gooo!!!");
+
+
 }
 
 
