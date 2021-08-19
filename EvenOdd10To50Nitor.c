@@ -3,17 +3,34 @@
 int main(){
 
 
-int firstNumber;
+int firstNumber=10;
 
-int lastNumber;
+int lastNumber=50;
 
 int i;
 
-for(i=firstNumber;i<=lastNumber;i++){
 
+printf("Even Numbers: \n");
+for(i=firstNumber;i<=lastNumber;i++){
+if(i%2==0){
+    printf("%d\n",i);
+}
 
 
 }
+
+printf("Odd Numbers: \n");
+for(i=firstNumber;i<=lastNumber;i++){
+
+if(i%2==1){
+    printf("%d\n",i);
+}
+
+}
+
+
+
+
 
 
 
