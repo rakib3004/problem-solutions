@@ -5,8 +5,8 @@ int main()
     printf("Enter the marks:");
     scanf("%d",&m);
     c=(m/10);
-    switch(c)
-    case 0:
+    switch(c){
+         case 0:
 case 1:
 case 2:
 case 3:
@@ -37,7 +37,7 @@ case 9:
     printf("A+");
     break;
 
-case 10
+case 10:
         if(m<100)
         {
             printf("A+");
@@ -45,8 +45,10 @@ case 10
         }
         else
             printf("Invalid");
+    }
 
 
 
 
+return 0;
 }
