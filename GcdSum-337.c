@@ -1,6 +1,11 @@
 #include <stdio.h>
-int main()
+
+
+void test()
 {
+
+
+
 	int n1,n2,rem,s=0,count=0,n,i;
 	int x_factor=0;
 	scanf("%d",&n);
@@ -20,5 +25,25 @@ int main()
 			n1=n2;
 			n2=rem;
 		}
-		printf("%d",n1);
+		printf("%d\n",n1);
 	}
+
+int main()
+{
+
+
+    int t;
+
+	scanf("%d",&t);
+
+    while(t--)
+    {
+
+        test();
+
+    }
+
+
+    return 0;
+
+}
