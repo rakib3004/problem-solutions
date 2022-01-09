@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1621270254 source:c:\users\hp\desktop\cse373\final\main.cpp
+	<iostream>
+	<list>
+	<stack>
+
