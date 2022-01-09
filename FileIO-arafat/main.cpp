@@ -122,28 +122,47 @@ cout << endl;
 int main()// Driver program to test above functions
 {
 
+
+   FILE *fptr;
+   fptr = fopen("input.txt","r");
+   int num=0, index=0;
+
+
+
+
 Graph g(12);// Creating a graph given in the question
 
-    g.addEdge(1, 2);
-    g.addEdge(2, 3);
-    g.addEdge(2, 4);
-    g.addEdge(2, 5);
-    g.addEdge(3, 6);
-    g.addEdge(4, 5);
-    g.addEdge(4, 7);
-    g.addEdge(5, 2);
-    g.addEdge(5, 6);
-    g.addEdge(5, 7);
-    g.addEdge(6, 3);
-    g.addEdge(6, 8);
-    g.addEdge(7, 8);
-    g.addEdge(7, 10);
-    g.addEdge(8, 7);
-    g.addEdge(9, 7);
-    g.addEdge(10, 9);
-    g.addEdge(10, 11);
-    g.addEdge(11, 12);
-    g.addEdge(12, 10);
+
+for(int i=0;i<12;i++){
+
+    fscanf(fptr,"%d", &num);
+          fscanf(fptr,"%d", &index);
+    g.addEdge(num, index);
+
+}
+
+
+
+//
+//    g.addEdge(2, 3);
+//    g.addEdge(2, 4);
+//    g.addEdge(2, 5);
+//    g.addEdge(3, 6);
+//    g.addEdge(4, 5);
+//    g.addEdge(4, 7);
+//    g.addEdge(5, 2);
+//    g.addEdge(5, 6);
+//    g.addEdge(5, 7);
+//    g.addEdge(6, 3);
+//    g.addEdge(6, 8);
+//    g.addEdge(7, 8);
+//    g.addEdge(7, 10);
+//    g.addEdge(8, 7);
+//    g.addEdge(9, 7);
+//    g.addEdge(10, 9);
+//    g.addEdge(10, 11);
+//    g.addEdge(11, 12);
+//    g.addEdge(12, 10);
 
 
 g.printSCCs();
