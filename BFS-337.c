@@ -9,7 +9,7 @@ if(a[v][i]==1&& visited[i]==0)
 q[++r]=i;
 if(f<r)
 {
-visited[q[f]]=1;
+//visited[q[f]]=1;
 bfs(q[f++]);
 }
 }
